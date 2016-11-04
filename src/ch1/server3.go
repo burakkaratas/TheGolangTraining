@@ -1,14 +1,10 @@
 package main
 
 import (
-	"sync"
 	"net/http"
 	"fmt"
 	"log"
 )
-
-var mu sync.Mutex
-var count int
 
 func main() {
 	http.HandleFunc("/", myHandler2)
